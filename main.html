@@ -1,63 +1,96 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-		crossorigin="anonymous"></script>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="myCarousel">
-
-		<div id="carouselExample" class="carousel slide">
-			<div class="carousel-inner" id="myCarousel">
-				<div class="carousel-item first-slide">
-					<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="d-block w-100"
-						alt="image1">
-				</div>
-				<div class="carousel-item second-slide">
-					<img src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=579&q=80"
-						class="d-block w-100" alt="image2">
-				</div>
-				<div class="carousel-item third-slide active">
-					<img src="https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-						class="d-block w-100" alt="image3">
-				</div>
-				<div class="carousel-item fourth-slide">
-					<img src="https://images.unsplash.com/photo-1595147389795-37094173bfd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-						class="d-block w-100" alt="image4">
-				</div>
-				<div class="carousel-item fifth-slide">
-					<img src="https://images.unsplash.com/photo-1613323593608-abc90fec84ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-						class="d-block w-100" alt="image5">
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-
-	</div>
-
-
-	<script type="text/javascript" src="./script.js">
-
-	</script>
-
-</body>
-
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+ 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item first-slide">
+            <img
+              src="https://image.shutterstock.com/image-vector/shopping-online-on-website-mobile-260nw-1206570103.jpg"
+              id="first_image"
+              alt="Los Angeles"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>First Slide</h3>
+              <p>This is first slide!</p>
+            </div>
+          </div>
+ 
+          <div class="item second-slide">
+            <img
+              src="https://image.freepik.com/free-vector/digital-marketing-concept-online-shopping-mobile-application_68971-367.jpg"
+              id="second_image"
+              alt="Chicago"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Second Slide</h3>
+              <p>This is second slide!</p>
+            </div>
+          </div>
+ 
+          <div class="item active third-slide">
+            <img
+              src="https://image.shutterstock.com/image-photo/young-student-watching-lesson-online-260nw-1676998306.jpg"
+              id="third_image"
+              alt="New York"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Third Slide</h3>
+              <p>This is third slide!</p>
+            </div>
+          </div>
+ 
+          <div class="item fourth-slide">
+            <img
+              src="https://www.daysoftheyear.com/wp-content/uploads/carousel-day.jpg"
+              id="fourth_image"
+              alt="New York"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Fourth Slide</h3>
+              <p>This is fourth slide!</p>
+            </div>
+          </div>
+ 
+          <div class="item fifth-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3TmYe2w7n0B-5juuJFlR_9duENGn4QEEYSuzXvaPVViYnHYfYYhvccgW5dqV_6p-OKg&usqp=CAU"
+              id="fifth_image"
+              alt="New York"
+              style="width: 100%"
+            />
+            <div class="carousel-caption">
+              <h3>Fifth Slide</h3>
+              <p>This is fifth slide!</p>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
-
-
-
